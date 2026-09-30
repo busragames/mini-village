@@ -3,7 +3,7 @@
 A small browser city-builder. Build an elf village along the river, plan where every building goes, and awaken the World Tree.
 Made with plain HTML, CSS and JavaScript (no libraries, no build step).
 
-**Play it:** (add your GitHub Pages link here)
+**Play it:** https://busragames.github.io/mini-village/
 
 ## How to play
 - Choose a building in the **Build** list, then click a tile on the map.
