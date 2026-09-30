@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whispering Grove</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Whispering Grove</h1>
+    <p>Build an elf village along the river and awaken the World Tree.</p>
+  </header>
+
+  <section id="topbar">
+    <div class="res"><span>🪵</span><b id="wood">0</b><small>Wood <i id="rate-wood"></i></small></div>
+    <div class="res"><span>🫐</span><b id="berries">0</b><small>Berries <i id="rate-berries"></i></small></div>
+    <div class="res"><span>🌙</span><b id="moonlight">0</b><small>Moonlight <i id="rate-moonlight"></i></small></div>
+    <div class="res"><span>🧝</span><b id="elves">0</b><small>Elves <i id="capacity"></i></small></div>
+    <p id="daytime"></p>
+  </section>
+
+  <div class="layout">
+    <section class="world">
+      <div class="map-frame">
+        <div id="map"></div>
+        <div id="wisps" aria-hidden="true"></div>
+      </div>
+      <p id="info"></p>
+      <button id="gather">Gather</button>
+      <p id="message" aria-live="polite"></p>
+    </section>
+
+    <aside>
+      <section id="quest">
+        <small id="quest-step"></small>
+        <strong id="quest-text"></strong>
+        <small id="quest-reward"></small>
+      </section>
+
+      <section>
+        <h2>Build</h2>
+        <div id="build-list"></div>
+      </section>
+
+      <section>
+        <h2>Upgrades</h2>
+        <div id="upgrade-list"></div>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <button id="story" class="link">Story</button>
+    <button id="reset" class="link">Start over</button>
+  </footer>
+
+  <div id="intro" class="overlay" hidden>
+    <div class="overlay-box">
+      <h2>The World Tree is sleeping</h2>
+      <p>Deep in the forest stands an ancient tree that has not woken for a thousand years.
+        A small group of elves has come to live beside it, and you lead them.</p>
+      <p>Build a village along the river: plant berry groves, build treehouses and gather
+        moonlight at night. When 20 elves live in your grove, plant the World Tree in the
+        sacred glade and wake the forest.</p>
+      <button id="start">Start</button>
+    </div>
+  </div>
+
+  <div id="win" class="overlay" hidden>
+    <div class="overlay-box">
+      <h2>The World Tree awakens</h2>
+      <p>Golden light runs through its roots and the whole forest wakes up. Your elves are home.</p>
+      <dl id="results"></dl>
+      <button id="restart">Play again</button>
+    </div>
+  </div>
+
+  <script src="js/building.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/daycycle.js"></script>
+  <script src="js/upgrades.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
