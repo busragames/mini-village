@@ -33,5 +33,11 @@ Game logic (`game.js` and the classes) is kept separate from drawing (`main.js`,
 ## Concept art
 See the `concept-art/` folder for the art direction, prompts and tools I used.
 
-## How I used AI
-(Write this in your own words: which parts AI helped with, what you changed or added yourself, and what you learned.)
+## How I made it
+I started programming in September 2026 and this is my first project. I built it together with an AI assistant:
+
+- I chose the genre, the elf forest theme and the look of the game.
+- The AI wrote most of the code. I played every version, said what felt too simple or confusing, and asked for changes. The tile map, the story screen and the ending came from that testing.
+- Now I am reading the code file by file to understand it, and I make my own changes as separate commits.
+
+What I am learning: how classes and inheritance work (`Building` → `ProducerBuilding` → `MoonWell`), why game logic is kept separate from drawing, and how to use Git and GitHub.
